@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(../images/background.png);
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3{
+    font-family: 'Lora', serif;
+}
+
+h2,h3{
+    color: #dbab51;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    padding: 200px 0px;
+    font-size: 20px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.116), black),
+        url(../images/jumbotron.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron h1, p{
+    margin: 0;
+}
+
+nav {
+    background-color: #ebbd6a;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #ad7e27;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+#welcome{
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+button{
+    background-color: transparent;
+    height: 35px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #ebbd6a;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main article{
+    text-align: justify;
+}
+
+#content article img{
+    float: left;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+article hr{
+    margin-top: -15px;
+}
+
+aside {
+    width: 25%;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.profile {
+    border-radius: 10px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section table{
+    text-align: left;
+}
+
+footer {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    background-color: #ebbd6a;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+       width: 100%;
+    }
+    aside {
+        padding: 0;
+    }
+    #content article img{
+        width: 100%;
+    }
+ }
